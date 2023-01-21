@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('./config.css');
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-image: url(../../assets/img/wave-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back{
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    padding: 30px 0px 0px 40px;
+}
+
+.back > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 400;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 809px;
+    height: 360px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+   
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    margin-bottom: 25px;
+    max-width: 170px;
+    max-height: 40px;   
+}
+
+.input-field{
+    display: block;
+    border: 2px solid transparent;
+    margin-top: 4%; 
+    padding: 20px;
+    width: 320px;
+    height: 38px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    transition: border-color 0.4s;
+}
+
+.input-field:hover,
+.input-field:focus{
+    border-color: #4ECABF;
+}
+
+.check-message{
+    font-size: 12px;
+}
+
+.sub-button{
+    background-color: var(--tea-light);
+    border: none;
+    width: 222px;
+    height: 34px;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: #f2f2f2;
+}
+
+.sub-button:hover{
+    background-color: #50b6ad;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.link, 
+p{
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.link{
+    font-weight: 800;
+    color: #36a89f;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-img{
+    width: 270px;
+    height: 250px;
+}
+
+.theme-toggle{
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    left: 96%;
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
