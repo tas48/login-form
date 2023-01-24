@@ -22,7 +22,3 @@ Form, using Html, CSS and  Vanilla Js in your construction.
 - :red_circle: HTML
 - :red_circle: CSS
 - :red_circle: JavaScript
-
-- [:heavy_check_mark:] Eat Breakfast
-- [ ] Code
-
