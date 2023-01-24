@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 :root{
   --light: #f2f2f2;
   --tea-light: #4ECABF;
@@ -8,4 +10,11 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  background-image: url(../../assets/img/wave-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
