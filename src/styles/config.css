@@ -3,6 +3,9 @@
 :root{
   --light: #f2f2f2;
   --tea-light: #4ECABF;
+  --dark-bg: #242424;
+  --dark-input: #2A2C2B;
+  --dark-tea: #4D9C95;
 }
 
 *{
@@ -10,11 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: 'Inter', sans-serif;
 }
 
-body{
-  font-family: 'Inter', sans-serif;
-  background-image: url(../../assets/img/wave-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+

@@ -7,9 +7,11 @@
 
     <link rel="stylesheet" href="src/styles/global.css">
     <link rel="shortcut icon" href="assets/icons/favicon.svg" type="image/x-icon">
+
+    <script src="src/js/change-theme.js" defer></script>
     <title>Login</title>
 </head>
-<body>
+<body class="light">
     <div class="back">
         <a href="index.html">
             <img src="assets/icons/arrow-left.svg">
@@ -17,19 +19,19 @@
         </a>
     </div>
     <main class="main">
-        <div class="container">
+        <div class="light-container">
             <div class="info">
-                <a href="index.html"><img src="assets/icons/logo.svg" alt="logomarca" class="logo"></a>
+                <a href="index.html"><img src="assets/icons/logo.svg" alt="logomarca" class= "logo"></a>
                 <form action="" method="post">
-                    <input type="email" name="email" class="input-field" placeholder="Email">
-                    <input type="password" name="senha" class="input-field" placeholder="Senha">
+                    <input type="email" name="email" class="light-input-field" placeholder="Email">
+                    <input type="password" name="senha" class="light-input-field" placeholder="Senha">
                 </form>
-                <button type="submit" class="sub-button" onclick="sucess()">Login</button>
+                <button type="submit" class="light-sub-button" onclick="sucess()">Login</button>
                 <p>Não possui conta? <a href="src/pages/register.html" class="link">Criar conta</a></p>
             </div>
             <aside>
-                <button class="theme-toggle"><img src="../../assets/icons/moon.svg" alt=""></button>
-                <img class="aside-img" src="assets/img/aside-login-img.svg" alt="imagem ilustrativa">
+                <button class="theme-toggle"><img class="toggle-img" src="../../assets/icons/moon.svg" alt=""></button>
+                <img class="light-aside-img" src="assets/img/aside-login-img.svg" alt="imagem ilustrativa">
             </aside>
         </div>
     </main>

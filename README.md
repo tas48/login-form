@@ -8,13 +8,11 @@ Form, using Html, CSS and  Vanilla Js in your construction.You can acess the web
 
 - [:heavy_check_mark:] :page_facing_up: Create the Form using semantic HTML tags 
 - [:heavy_check_mark:] :lips: Style it using Flexbox CSS
-- [:heavy_check_mark:] :key: Include passwords match verification using Js
-- :crescent_moon: Create a dark-mode with Css
-- :repeat: Implement a toggle to switch between light and dark themes
-- :white_check_mark: Use Js REGEX to validade the form's entries
+- [:heavy_check_mark:] :key: Include passwords match verification using `JS`
+- :crescent_moon: Implment a dark-mode
+- :white_check_mark: Use `Js REGEX` to validade the form's entries
 - :art: Add responsive web design
 - :file_folder: Implement a back-end
-- :round_pushpin: Implment a simple `router` and a 404 page
 - :checkered_flag: Finaly finish it off
 
 ## Development stack
