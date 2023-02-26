@@ -10,17 +10,28 @@ const link = document.querySelector('.info > p');
 
 
 toggle.addEventListener('click', () => {
+  let page = witchPage();
 
+  if(page.endsWith('index.html')){
+    changeTheme("assets/icons/");
+  }
+  else{
+    changeTheme("../../assets/icons/");
+  }
+
+});
+
+function changeTheme(path){
   let lightContainer = container.classList.contains('light-container');
 
   if(lightContainer){
     container.classList.replace('light-container', 'dark-container');
 
     setTimeout(() => {
-      logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo-dark.svg');
+      logo.setAttribute('src', `${path}logo-dark.svg`);
       bg.classList.replace('light', 'dark');
-      toggleImg.setAttribute('src','http://localhost:5500/assets/icons/sun.svg');
-      asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-image-dark.svg');
+      toggleImg.setAttribute('src',`${path}sun.svg`);
+      asideImg.setAttribute('src', `${path}aside-image-dark.svg`);
     }, 100);
     
     inputs.forEach(input => {
@@ -33,13 +44,12 @@ toggle.addEventListener('click', () => {
 
   else{
     container.classList.replace('dark-container', 'light-container');
-    logo.src = "http://localhost:5500/assets/icons/logo-dark.svg";
-    
+  
     setTimeout(() => {
-      logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo.svg');
+      logo.setAttribute('src', `${path}logo.svg`);
       bg.classList.replace('dark', 'light');
-      toggleImg.setAttribute('src','http://localhost:5500/assets/icons/moon.svg');
-      asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-login-img.svg');
+      toggleImg.setAttribute('src',`${path}moon.svg`);
+      asideImg.setAttribute('src', `${path}aside-login-img.svg`);
     }, 100);
 
     inputs.forEach(input => {
@@ -49,14 +59,8 @@ toggle.addEventListener('click', () => {
     submit.classList.replace( 'dark-sub-button', 'light-sub-button');
     link.style.color = "#2f2f2f";
   }
-    
+}
 
-
-  // if(lightInputs){
-  //   inputs[0].classList.replace('light-input-field', 'dark-input-field');
-    
-    
-  // }
-
-
-});
+function witchPage(){
+  return window.location.pathname;
+}
