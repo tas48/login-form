@@ -15,30 +15,39 @@ toggle.addEventListener('click', () => {
 
   if(lightContainer){
     container.classList.replace('light-container', 'dark-container');
-    logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo-dark.svg');
-    bg.classList.replace('light', 'dark');
-    toggleImg.setAttribute('src','http://localhost:5500/assets/icons/sun.svg');
-    asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-image-dark.svg');
+
+    setTimeout(() => {
+      logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo-dark.svg');
+      bg.classList.replace('light', 'dark');
+      toggleImg.setAttribute('src','http://localhost:5500/assets/icons/sun.svg');
+      asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-image-dark.svg');
+    }, 100);
     
     inputs.forEach(input => {
       input.classList.replace('light-input-field', 'dark-input-field');
-
-      link.style.color = "#f2f2f2";
     });
+
+    submit.classList.replace('light-sub-button', 'dark-sub-button');
+    link.style.color = "#f2f2f2";
   }
+
   else{
     container.classList.replace('dark-container', 'light-container');
     logo.src = "http://localhost:5500/assets/icons/logo-dark.svg";
-    logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo.svg');
-    bg.classList.replace('dark', 'light');
-    toggleImg.setAttribute('src','http://localhost:5500/assets/icons/moon.svg');
-    asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-login-img.svg');
+    
+    setTimeout(() => {
+      logo.setAttribute('src', 'http://localhost:5500/assets/icons/logo.svg');
+      bg.classList.replace('dark', 'light');
+      toggleImg.setAttribute('src','http://localhost:5500/assets/icons/moon.svg');
+      asideImg.setAttribute('src', 'http://localhost:5500/assets/img/aside-login-img.svg');
+    }, 100);
 
     inputs.forEach(input => {
       input.classList.replace('dark-input-field', 'light-input-field');
-
-      link.style.color = "#2f2f2f";
     });
+    
+    submit.classList.replace( 'dark-sub-button', 'light-sub-button');
+    link.style.color = "#2f2f2f";
   }
     
 
